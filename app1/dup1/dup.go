@@ -13,8 +13,6 @@ func main() {
 		counts[input.Text()]++
 	}
 
-	x := 1
-
 	for line, n := range counts {
 		if n > 1 {
 			fmt.Printf("%d\t%s\n", n, line)
