@@ -31,3 +31,22 @@ func variablesDeclarations() {
 	var names []string
 	var err error
 }
+
+func point() {
+	x := 1
+	p := &x
+	fmt.Println(*p)
+	*p =2
+	fmt.Println(x)
+}
+
+func incr(p *int) int {
+	*p++
+	return *p
+}
+
+v := 1
+incr(&v)
+incr(&v)
+
+
